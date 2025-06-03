@@ -33,33 +33,33 @@ export default function Scene({ wireframe }) {
         position={[0.5, -1.2, 0]}
         scale={[-1.8, 1.8, 1.8]}
         wireframe={wireframe}
-        onPulse={register('motherboard')}
+       // onPulse={register('motherboard')}
       />
       <CPU
         position={CORE_DEVICES.cpu.position}
         scale={[0.6, 0.6, 0.6]}
         wireframe={wireframe}
-        onPulse={register('cpu')}
+       // onPulse={register('cpu')}
       />
       <RAM
         position={CORE_DEVICES.ram.position}
         scale={[45, 45, 45]}
         rotation={[-1.7, Math.PI, 0]}
         wireframe={wireframe}
-        onPulse={register('ram')}
+        //onPulse={register('ram')}
       />
       <HardDrive
         position={CORE_DEVICES.hard_drive.position}
         scale={[50, 50, 50]}
         rotation={[-5.5, Math.PI / 1.3, 0]}
         wireframe={wireframe}
-        onPulse={register('hard_drive')}
+       // onPulse={register('hard_drive')}
       />
       <Monitor
         position={CORE_DEVICES.monitor.position}
         scale={[200, 200, 200]}
         wireframe={wireframe}
-        onPulse={register('monitor')}
+        //onPulse={register('monitor')}
       />
 
       {DEVICE_CONFIG.map(({ id, path, position, color }) => (
@@ -70,7 +70,7 @@ export default function Scene({ wireframe }) {
             position={position}
             scale={[1, 1, 1]}
             wireframe={wireframe}
-            onPulse={register(id)}
+           // onPulse={register(id)}
           />
           <ParticleFlow
             color={color}
